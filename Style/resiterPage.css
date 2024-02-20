@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 200vh;
+    background-color: #091720;
+    background-image: url("../staticfiles/BankBakImg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---navbar start--- */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    color:  #164d68;
+}
+
+.logo1{
+    /* border: 3px solid rgb(209, 25, 25); */
+    width: 150px;
+    margin-left: 7px;
+    margin-top: 7px;
+    
+}
+
+.nav_border{
+    background:  #3E84A8;
+    width: 100%;
+    height: 85px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar{
+    /* border: 3px solid rgb(41, 144, 213); */
+    background:  #3E84A8;
+    width: 100%;
+    height: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.links{
+    /* border: 3px solid rgb(156, 213, 41); */
+    display: flex;
+    gap: 2rem;
+    background:#3E84A8;
+	border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.action_btn{
+    background-color: #ffffff;
+    color: #3E84A8;;
+    padding: 0.5rem 1rem;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+/* ----navbar end---- */
+
+/* ---resiter form Start--- */
+.formbody{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    background: #3E84A8;
+    padding: 5%;
+    margin: 150px 28px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px 20px #000;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    width: 50%;
+    margin-left: 25%;
+    color: #3E84A8;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.Hover:hover{
+    border: 3px solid  #346d87;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    font-size: 20px;
+    border-bottom: 1px solid ffffff;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.gender-title::after{
+    content: '*';
+    color: red;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 40%;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: #3E84A8;
+    background: #1b0859;
+}
+
+.form-submit-btn input:hover{
+    background: #ffffff;
+    color: #245872;
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+select{
+    width: 95%;
+    height: 40px;
+    padding: 10px 20px;
+    letter-spacing: 0.50px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+}
+select::-ms-expand{
+    display: none;
+}
+select:hover{
+    border: 3px solid  #346d87;
+}
+.required::after{
+    content: '*';
+    color: red;
+}
+/* ---resiter form Start--- */

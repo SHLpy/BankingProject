@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/resiterPage.css">
+    <title>Resister Form</title>
+</head>
+<body>
+    <!-- navbar start -->
+    <header>
+        <div class="nav_border">
+            <div class="navbar">
+                <!-- For_Logo -->
+                <div class="logobar">
+                    <img src="../staticfiles/largeLogo.jpg" alt="" class="logo1">
+                </div>
+                
+                <ul class="links">
+                    <li><a href="http://127.0.0.1:5500/UI-Fronted/Pages/frontPage.html">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                </ul>
+                <a href=http://127.0.0.1:5500/UI-Fronted/Pages/loginPage.html# class="action_btn">Login</a>
+            </div>
+        </div>
+    </header>
+    <!-- navbar end -->
+
+    <!--resiter form Start -->
+    <div class="formbody">
+        <div class="container">
+            <h1 class="form-title">Registration</h1>
+            <form action="#">
+              <div class="main-user-info">
+                <div class="user-input-box">
+                  <label class="required" for="Branch Name">Branch Name</label>
+                  <input type="text"
+                          id="username"
+                          class="Hover"
+                          name="username"
+                          placeholder="Enter Username"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="city">City</label>
+                  <input type="text"
+                          id="username"
+                          class="Hover"
+                          name="username"
+                          placeholder="Enter Username"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="first Name">First Name</label>
+                  <input type="text"
+                          id="fullName"
+                          class="Hover"
+                          name="fullName"
+                          placeholder="Enter Full Name"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="last name">Last name</label>
+                  <input type="text"
+                          id="username"
+                          class="Hover"
+                          name="username"
+                          placeholder="Enter Username"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="birthday">Date-Of-Birth</label>
+                  <input type="date" id="birthday" name="birthday" class="Hover">
+                </div>
+                <div class="user-input-box">
+                  <label for="mother name">Mother's Maiden Name</label>
+                  <input type="password"
+                          id="confirmPassword"
+                          name="confirmPassword"
+                          placeholder="Confirm Password"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="email">Email</label>
+                  <input type="email"
+                          id="email"
+                          class="Hover"
+                          name="email"
+                          placeholder="Enter Email"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="phoneNumber">Phone Number</label>
+                  <input type="text"
+                          id="phoneNumber"
+                          class="Hover"
+                          name="phoneNumber"
+                          placeholder="Enter Phone Number"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="confirmPassword">Street Address</label>
+                  <input type="password"
+                          id="confirmPassword"
+                          class="Hover"
+                          name="confirmPassword"
+                          placeholder="Confirm Password"/>
+                </div>
+                <!-- States of India -->
+                <div class="user-input-box">
+                  <label for="confirmPassword">State</label>
+                  <select>
+                    <option value="AP">--Choose-state--</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="GA">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="GA">Goa</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UT">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DN">Dadra and Nagar Haveli</option>
+                    <option value="DD">Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+                  </select>
+                </div>
+                <div class="user-input-box">
+                  <label for="confirmPassword">Nationality</label>
+                  <input type="password"
+                          id="confirmPassword"
+                          class="Hover"
+                          name="confirmPassword"
+                          placeholder="Confirm Password"/>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="confirmPassword">Account Types</label>
+                  <select name="card" id="account">
+                    <option value="accounts">--choose-Accounts-Type--</option>
+                    <option value="saving">-Saving Account</option>
+                    <option value="fixed ">-Fixed Deposit Account</option>
+                    <option value="salary">-Salary Account</option>
+                    <option value="current">-Current Account</option>
+                  </select>
+                </div>
+                <div class="user-input-box">
+                  <label class="required" for="confirmPassword">Currency Types</label>
+                  <select name="card" id="account">
+                    <option value="Currency">--choosee-currency-type--</option>
+                    <option value="INR">INR-Indian Rupee</option>
+                    <option value="USD">USD-Us Doller</option>
+                    <option value="EUR ">EUR-Euro</option>
+                    <option value="GBP">GBP-Pound</option>
+                    <option value="CAD">CAD-Canadian Dollar</option>
+                  </select>
+                </div>
+              </div>
+              <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                  <input type="radio" name="gender" id="male">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="other">
+                  <label for="other">Other</label>
+                </div>
+              </div>
+              <div class="form-submit-btn">
+                <input type="submit" value="Register" >
+              </div>
+            </form>
+          </div>
+          <!--resiter form End -->
+    </div>
+    </body>
+    </html>
